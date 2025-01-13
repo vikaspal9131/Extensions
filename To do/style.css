@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+.container {
+  width: 350px;
+  text-align: start;
+  color: white;
+  padding: 0px 20px 0px 20px;
+
+}
+
+.day{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.day i {
+  font-size: 20px;
+}
+
