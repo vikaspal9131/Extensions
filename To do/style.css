@@ -5,11 +5,17 @@ body {
   align-items: center;
   background-color: #000000;
 }
+::-webkit-scrollbar{
+   display: block;
+}
 .container {
   width: 350px;
+  /* height: 400px; */
+  min-height  : 300px;
   text-align: start;
   color: white;
   padding: 0px 20px 0px 20px;
+  
 
 }
 
