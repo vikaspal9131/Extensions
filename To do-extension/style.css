@@ -3,33 +3,72 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 ::-webkit-scrollbar{
    display: block;
 }
 .container {
-  width: 350px;
-  /* height: 400px; */
+  width: 310px;
   min-height  : 300px;
   text-align: start;
-  color: white;
   padding: 0px 20px 0px 20px;
-  
+  border: none;
+  border-radius: 20px;
+  font-family: "Ubuntu", serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
+.user-name{
+  font-size: 22px;
+  margin-bottom: 0px;
+  color: #3ff93c;
+}
+.time {
+  margin-top: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  color: rgb(181, 181, 181);
 }
 
 .day{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  background-color: rgb(63, 61, 61);
+  border-radius: 7px;
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 30px;
 }
 
-.day i {
+.day p {
+  margin-right: 90px;
+}
+.day button {
+  background: none;
+  border: none;
+  font-size: 34px;
+  color: white;
+  cursor: pointer;
+  font-weight: 200;
+}
+
+input{
+  height: 20px;
+  background: #000;
+  border: none ;
+  outline: none;
+  color: white;
   font-size: 20px;
 }
 
-/* Overlay styling */
+
 .overlay {
   position: fixed;
   top: 0;
@@ -41,9 +80,9 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  color: black;
 }
 
-/* Popup container */
 .popup {
   background: #fff;
   padding: 20px;
@@ -71,5 +110,6 @@ body {
 
 .popup button:last-child {
   background: #4caf50;
-  color: #fff;
+  color: black;
 }
+ 
