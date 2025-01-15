@@ -94,9 +94,19 @@
   
 
 
-  const addBtn = document.querySelector(".add-btn");
+const addBtn = document.querySelector(".add-btn");
 
 window.addEventListener("DOMContentLoaded", loadTasks);
+
+const time = document.querySelector(".time");
+const now = new Date();
+const day = now.getDate();
+const month = now.getMonth() + 1; 
+const year = now.getFullYear();
+
+const formattedDateTime = `${day}/${month}/${year}`;
+
+time.innerHTML = formattedDateTime;
 
 addBtn.addEventListener("click", () => {
   const newTask = document.createElement("div");
