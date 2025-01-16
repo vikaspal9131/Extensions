@@ -15,7 +15,7 @@ Welcome to the **Extension Hub Repository**! This project is dedicated to hostin
 <img src="/Donezo/icon.png" alt="Dark Mode Toggle" width="80" height="80"/>
 
 
-## How to use extension in your system 
+## How to Use the Extension on Your System
 
 1. Clone the repository:  
    `git clone https://github.com/vikaspal9131/Extensions.git`
