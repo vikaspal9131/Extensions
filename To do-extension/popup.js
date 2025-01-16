@@ -16,26 +16,32 @@ time();
 
 
 addBtn.addEventListener("click", () => {
+  
   const newTask = document.createElement("div");
   newTask.classList.add("task");
-
+  
   const inputField = document.createElement("input");
   inputField.type = "text";
   inputField.placeholder = "Enter a task";
 
-  const submitBtn = document.getElementsByClassName(".btn");
+  const submitBtn = document.createElement("button");
+  submitBtn.innerHTML = "Add";
   
 
   newTask.appendChild(inputField);
+  newTask.appendChild(submitBtn);
   
 
   submitBtn.addEventListener("click", () => {
+
     const taskText = inputField.value.trim();
+
     if (taskText) {
       newTask.innerHTML = `${taskText} `;
 
       const deleteBtn = document.createElement("button");
       deleteBtn.textContent = "Delete";
+      
       deleteBtn.addEventListener("click", () => {
         showDeletePopup(taskText, newTask);
       });

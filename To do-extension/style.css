@@ -69,23 +69,19 @@ nav{
 
 input{
   height: 20px;
-  background: #000;
   border: none ;
   outline: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 20px;
+  width:240px;
 }
 
 .task{
   font-weight: 100;
   font-size: 25px;
-  background: red;
-  gap: 30px;
-
-}
-
-button{
-  
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 
