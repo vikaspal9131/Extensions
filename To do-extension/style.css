@@ -67,7 +67,18 @@ nav{
   padding: 10px 15px;
 }
 
-input{
+
+
+
+.wraper{
+  font-weight: 100;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.wraper input{
   height: 20px;
   border: none ;
   outline: none;
@@ -76,18 +87,21 @@ input{
   width:240px;
 }
 
+
+
 .task{
   font-weight: 100;
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+  font-size: 20px; 
 }
 
 
 .task h1{
   font-weight: 400;
   font-size: 15px;
+}
+
+.task button {
+  margin-left: 30px;
 }
 .overlay {
   position: fixed;
