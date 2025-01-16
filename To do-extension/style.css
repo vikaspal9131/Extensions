@@ -68,13 +68,11 @@ nav{
 }
 
 
-
-
 .wraper{
   font-weight: 100;
   font-size: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
@@ -89,20 +87,24 @@ nav{
 
 
 
-.task{
+/* .task{
   font-weight: 100;
   font-size: 20px; 
-}
+} */
 
 
-.task h1{
+/* .task h1{
   font-weight: 400;
   font-size: 15px;
-}
+} */
 
-.task button {
+/* .task button {
   margin-left: 30px;
-}
+} */
+
+
+
+
 .overlay {
   position: fixed;
   top: 0;
@@ -146,4 +148,4 @@ nav{
   background: #4caf50;
   color: black;
 }
- 
+

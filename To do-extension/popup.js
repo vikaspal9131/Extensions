@@ -34,6 +34,7 @@ addBtn.addEventListener("click", () => {
   
 
   submitBtn.addEventListener("click", () => {
+    
 
     const taskText = inputField.value.trim();
 
@@ -55,8 +56,8 @@ addBtn.addEventListener("click", () => {
     }
   });
 
-  const preEle = document.querySelector(".tasks h1");
-  preEle.insertAdjacentElement("beforeend", newTask);
+  const preEle = document.querySelector(".tasks");
+  preEle.insertAdjacentElement("afterend", newTask);
 });
 
 function saveTask(task) {
@@ -67,11 +68,11 @@ function saveTask(task) {
 
 function loadTasks() {
   const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-  const preEle = document.querySelector(".tasks h1");
+  const preEle = document.querySelector(".tasks");
 
   tasks.forEach(task => {
     const newTask = document.createElement("div");
-    newTask.classList.add("task");
+    newTask.className = "wraper";
     newTask.textContent = task;
 
     const deleteBtn = document.createElement("button");
