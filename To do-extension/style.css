@@ -22,12 +22,18 @@ body {
   font-family: "Ubuntu", serif;
   font-weight: 700;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
 }
 
 nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
 }
 
 .profile{
@@ -43,7 +49,7 @@ nav{
   margin-top: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 10px;
-  color: rgb(181, 181, 181);
+  color: #000000;
 }
 
 .add-btn{
@@ -62,6 +68,7 @@ nav{
 }
 
 .see-task{
+  width: 90%;
   font-size: 20px;
   font-weight: 400;
   padding: 10px 15px;
@@ -69,11 +76,13 @@ nav{
 
 
 .wraper{
-  font-weight: 100;
-  font-size: 25px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 90%;
+  word-break: break-all; 
 }
 
 .wraper input{
@@ -81,29 +90,17 @@ nav{
   border: none ;
   outline: none;
   color: rgb(0, 0, 0);
-  font-size: 20px;
-  width:240px;
+  font-size: 14px;
+  width: 180px;
+  font-weight: 200;
+  word-wrap: break-word;
 }
 
+.wraper button {
+  background-color: #ffffff;
 
-
-/* .task{
-  font-weight: 100;
-  font-size: 20px; 
-} */
-
-
-/* .task h1{
-  font-weight: 400;
-  font-size: 15px;
-} */
-
-/* .task button {
-  margin-left: 30px;
-} */
-
-
-
+   margin-left: 50px;
+}
 
 .overlay {
   position: fixed;
@@ -120,7 +117,8 @@ nav{
 }
 
 .popup {
-  background: #fff;
+  width: 230px;
+  background: #ffffff;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
@@ -145,7 +143,7 @@ nav{
 }
 
 .popup button:last-child {
-  background: #4caf50;
-  color: black;
+  background: #000000;
+  color: rgb(255, 255, 255);
 }
 
