@@ -36,11 +36,11 @@ nav{
   width: 90%;
 }
 
-.profile{
-  font-weight: 100;
-  font-size: 30px;
+.profile img{ 
+  width: 50px;
+  border-radius: 50%;
 }
-.user-name{
+.greeting{
   font-size: 22px;
   margin-bottom: 0px;
   font-weight: 500;
@@ -65,6 +65,7 @@ nav{
   padding: 0px 70px;
   border: none;
   gap: 10px;
+  cursor: pointer;
 }
 
 .see-task{
@@ -97,10 +98,14 @@ nav{
 }
 
 .wraper button {
-  background-color: #ffffff;
-
+   border: none;
    margin-left: 50px;
+   background: transparent;
+   font-size: 20px;
+   cursor: pointer;
 }
+
+
 
 .overlay {
   position: fixed;
@@ -123,6 +128,7 @@ nav{
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
 }
 
 .popup p {

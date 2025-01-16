@@ -1,63 +1,74 @@
 const addBtn = document.querySelector(".add-btn");
 window.addEventListener("DOMContentLoaded", loadTasks);
 
-const time = ()=> {
-const time = document.querySelector(".time");
-const now = new Date();
-const day = now.getDate();
-const month = now.getMonth() + 1; 
-const year = now.getFullYear();
-const formattedDateTime = `${day}/${month}/${year}`;
-time.innerHTML = formattedDateTime;
+const time = () => {
+  const time = document.querySelector(".time");
+  const now = new Date();
+  const day = now.getDate();
+  const month = now.getMonth() + 1; 
+  const year = now.getFullYear();
+  const hours = now.getHours();
+
+   const formattedDateTime = `${day}/${month}/${year}`;
+   time.innerHTML = formattedDateTime;
+
+  let greeting;
+    if (hours < 12) {
+        greeting = "Good Morning !";
+    } else if (hours < 18) {
+        greeting = "Good Afternoon !";
+    } else {
+        greeting = "Good Night !";
+    }
+
+    const greet = document.querySelector(".greeting");
+    greet.innerHTML =  greeting;
 }
 time();
 
-
-
-
 addBtn.addEventListener("click", () => {
-  
   const newTask = document.createElement("div");
   newTask.className = "wraper";
 
-  
   const inputField = document.createElement("input");
   inputField.type = "text";
   inputField.placeholder = "Enter a task";
 
   const submitBtn = document.createElement("button");
-  submitBtn.innerHTML = "Add";
-  
-
+  const icon = document.createElement("i");
+  icon.className = "ri-add-line"; 
+  submitBtn.appendChild(icon);
   newTask.appendChild(inputField);
   newTask.appendChild(submitBtn);
   
-
   submitBtn.addEventListener("click", () => {
-    
 
     const taskText = inputField.value.trim();
 
     if (taskText) {
       newTask.innerHTML = `${taskText} `;
-
       const deleteBtn = document.createElement("button");
-      deleteBtn.textContent = "Delete";
 
-      deleteBtn.addEventListener("click", () => {
-        showDeletePopup(taskText, newTask);
+    const icon = document.createElement("i");
+    icon.className = "ri-delete-bin-line"; 
+    deleteBtn.appendChild(icon);
+
+
+    deleteBtn.addEventListener("click", () => {
+      showDeletePopup(taskText, newTask);
       });
 
       newTask.appendChild(deleteBtn);
 
       saveTask(taskText);
-    } else {
+    } 
+    else {
       alert("Please enter a task!");
     }
   });
 
-  const preEle = document.querySelector(".tasks");
-  preEle.insertAdjacentElement("afterend", newTask);
+  const addElement = document.querySelector(".tasks");
+  addElement.insertAdjacentElement("afterend", newTask);
 });
 
 function saveTask(task) {
@@ -76,7 +87,11 @@ function loadTasks() {
     newTask.textContent = task;
 
     const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "Delete";
+    const icon = document.createElement("i");
+    icon.className = "ri-delete-bin-line"; 
+ 
+    deleteBtn.appendChild(icon);
+
     deleteBtn.addEventListener("click", () => {
       showDeletePopup(task, newTask);
     });
@@ -87,15 +102,14 @@ function loadTasks() {
 }
 
 function showDeletePopup(task, taskElement) {
-  // Create the overlay
+
   const overlay = document.createElement("div");
   overlay.classList.add("overlay");
 
-  // Create the popup container
+
   const popup = document.createElement("div");
   popup.classList.add("popup");
 
-  // Add the content to the popup
   const message = document.createElement("p");
   message.textContent = `Are you sure you want to delete the task: "${task}"?`;
 

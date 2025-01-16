@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Donezo",
+  "version": "1.1",
+  "description": "Stay organized and boost productivity with this user-friendly Donezo extension. Effortlessly add, manage, and prioritize tasks in a sleek interface designed for simplicity and efficiency. Perfect for tracking your daily goals and staying on top of your schedule!",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html" 
+  },
+  "permissions": ["storage", "activeTab"]
+}
