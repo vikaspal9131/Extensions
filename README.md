@@ -44,11 +44,11 @@ We welcome contributions from developers who want to improve the repository or a
 To use the extensions in this repository:
 
 1. Clone the repository:  
-   `git clone https://github.com/your-username/extension-hub.git`
+    `git clone https://github.com/vikaspal9131/Extensions.git`
 
 2. Navigate to the desired extension folder.
 
-3. Follow the installation instructions provided in the folder's README.
+
 
 ## Feedback and Support
 
