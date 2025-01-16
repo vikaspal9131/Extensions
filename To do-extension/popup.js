@@ -1,16 +1,19 @@
-  const addBtn = document.querySelector(".add-btn");
-
+const addBtn = document.querySelector(".add-btn");
 window.addEventListener("DOMContentLoaded", loadTasks);
 
+const time = ()=> {
 const time = document.querySelector(".time");
 const now = new Date();
 const day = now.getDate();
 const month = now.getMonth() + 1; 
 const year = now.getFullYear();
-
 const formattedDateTime = `${day}/${month}/${year}`;
-
 time.innerHTML = formattedDateTime;
+}
+time();
+
+
+
 
 addBtn.addEventListener("click", () => {
   const newTask = document.createElement("div");
@@ -20,11 +23,11 @@ addBtn.addEventListener("click", () => {
   inputField.type = "text";
   inputField.placeholder = "Enter a task";
 
-  const submitBtn = document.createElement("button");
-  submitBtn.textContent = "Add Task";
+  const submitBtn = document.getElementsByClassName(".btn");
+  
 
   newTask.appendChild(inputField);
-  newTask.appendChild(submitBtn);
+  
 
   submitBtn.addEventListener("click", () => {
     const taskText = inputField.value.trim();
