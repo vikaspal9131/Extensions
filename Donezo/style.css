@@ -25,8 +25,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  
 }
 
 nav{
@@ -75,7 +73,6 @@ nav{
   padding: 10px 15px;
 }
 
-
 .wraper{
   display: flex;
   justify-content: space-between;
@@ -104,8 +101,6 @@ nav{
    font-size: 20px;
    cursor: pointer;
 }
-
-
 
 .overlay {
   position: fixed;
