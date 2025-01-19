@@ -49,11 +49,12 @@ body{
 
 input {
   border: none;
-  width: 75%;
+  width: 71%;
   height: 38px;
   padding: 0px 20px;
-  border-radius: 20px;
+  border-radius: 6px;
   outline: none;
+  font-size: 16px;
 }
 
 nav {
