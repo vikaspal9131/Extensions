@@ -39,6 +39,7 @@ body{
   text-align: center;
   background: #B9F500;
   border-radius: 6px;
+  cursor: pointer;
 }
 .gen-btn button{
   font-size: 25px;
@@ -48,6 +49,7 @@ body{
   font-family: "Ubuntu", serif;
   font-weight: 500;
   cursor: pointer;
+
 }
 .download-btn {
   width: 80%;
@@ -55,6 +57,7 @@ body{
   background: #B9F500;
   border-radius: 6px;
   display: none;
+  cursor: pointer;
 }
 .download-btn button{
   font-size: 25px;

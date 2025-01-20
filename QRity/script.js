@@ -1,4 +1,4 @@
-const btn = document.querySelector("#btn");
+const btn = document.querySelector(".gen-btn");
 const input = document.querySelector("#url");
 const canvas = document.querySelector("#qr-canvas");
 const downloadBtn = document.querySelector(".download-btn");
