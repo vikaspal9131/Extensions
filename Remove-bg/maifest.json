@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "bg-remove",
+  "version": "1.1",
+  "description": " test bg ",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_popup": "index.html" 
+  }
+}
