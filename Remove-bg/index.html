@@ -3,10 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Remove Background</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <nav>
+    <img src="assets/placeholder.png" alt="logo">
+    <p>BG Remover</p>
+  </nav>
+
+  <div class="container">
+    <div class="tag-line">
+      <h1>Remove Background from Your Images</h1>
+      <p>Upload your image and get a clean background instantly!</p>
+    </div>
+
+    <input type="file" id="imageUpload" accept="image/*">
+    <div class="preview">
+      <img src="assets/placeholder.png" id="originalImage" alt="Uploaded image">
+      <img id="outputImage" alt="Processed image" style="display: none;">
+    </div>
+
+    <div class="actions">
+      <button id="removeBgBtn">Remove Background</button>
+      <a id="downloadLink" style="display: none;" download="bg-removed.png">
+        <button>Download</button>
+      </a>
+    </div>
+  </div>
+
+  <script src="script/app.js"></script>
 </body>
 </html>
