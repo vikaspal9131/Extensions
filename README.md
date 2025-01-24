@@ -25,6 +25,14 @@ Welcome to the **Extension Hub Repository**! This project is dedicated to hostin
 <img src="/QRity/icon.png" alt="Dark Mode Toggle" width="80" height="80"/>
 
 
+### 3. 
+**Description:** The tool allows users to generate QR codes from any text or URL input and displays the result on a canvas element. It's an easy-to-use, lightweight tool for creating custom QR codes that can be scanned using any standard QR code reader.
+
+**Icon:** 
+
+<img src="/Pixvoid/icon.png" alt="Dark Mode Toggle" width="80" height="80"/>
+
+
 
 
 ## How to Use the Extension on Your System
