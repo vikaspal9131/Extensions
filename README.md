@@ -4,10 +4,8 @@ Welcome to the **Extension Hub Repository**! This project is dedicated to hostin
 
 ## Available Extensions
 
-
-
-
-### 1. Donezo
+---
+#### 1. Donezo
 **Description:** Stay organized and boost productivity with this user-friendly Donezo extension. Effortlessly add, manage, and prioritize tasks in a sleek interface designed for simplicity and efficiency.  
 
 **Icon:** 
@@ -15,7 +13,7 @@ Welcome to the **Extension Hub Repository**! This project is dedicated to hostin
 <img src="/Donezo/icon.png" alt="Dark Mode Toggle" width="80" height="80"/>
 
 
-
+---
 
 ### 2. QRity
 **Description:** The tool allows users to generate QR codes from any text or URL input and displays the result on a canvas element. It's an easy-to-use, lightweight tool for creating custom QR codes that can be scanned using any standard QR code reader.
@@ -24,16 +22,16 @@ Welcome to the **Extension Hub Repository**! This project is dedicated to hostin
 
 <img src="/QRity/icon.png" alt="Dark Mode Toggle" width="80" height="80"/>
 
-
-### 3. 
-**Description:** The tool allows users to generate QR codes from any text or URL input and displays the result on a canvas element. It's an easy-to-use, lightweight tool for creating custom QR codes that can be scanned using any standard QR code reader.
+---
+### 3. Pixvoid
+**Description:** Pixvoid is a powerful tool that removes backgrounds effortlessly, leaving your images clean and ready for any project. Experience seamless editing with a single click, transforming your photos into professional-quality visuals..
 
 **Icon:** 
 
 <img src="/Pixvoid/icon.png" alt="Dark Mode Toggle" width="80" height="80"/>
 
 
-
+---
 
 ## How to Use the Extension on Your System
 
