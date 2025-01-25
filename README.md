@@ -40,7 +40,7 @@ Welcome to the **Extension Hub Repository**! This project is dedicated to hostin
 
 2. Navigate to the desired extension folder.
 
-3. Open Chrome and go to the **Extensions** page by typing `chrome://extensions` in the address bar.
+3. Open Chrome and go to the **Extensions** page by typing `chrome://extensions` in the address bar .
 
 4. Enable **Developer mode** by toggling the switch in the top right.
 
