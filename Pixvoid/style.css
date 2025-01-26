@@ -45,6 +45,7 @@ input[type="file"] {
   justify-content: center;
   gap: 20px;
   margin: 20px 0;
+  display: none;
 }
 
 .preview img {
