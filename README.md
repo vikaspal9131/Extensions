@@ -72,6 +72,3 @@ To use the extensions in this repository:
 
 We value your feedback! If you encounter any issues or have suggestions for new features, please open an issue in the repository or contact us directly.
 
----
-
-Thank you for supporting the **Extension Hub Repository**. Together, we can create tools that make browsing more efficient and enjoyable!
